@@ -1,0 +1,33 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.DockPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="DockPanelWindow" Height="450" Width="800">
+
+   
+        <DockPanel>
+            <Button x:Name="btnTop" Content="Top" Width="80" Height="30" DockPanel.Dock="Top" Click="btnTop_Click"/>
+            <Button x:Name="btnButton" Content="Bottom" Width="80" Height="30" DockPanel.Dock="Bottom" Click="btnButton_Click"/>
+            <Button x:Name="btnLeft" Content="Left" Width="80" Height="30" DockPanel.Dock="Left" Click="btnLeft_Click"/>
+            <Button x:Name="btnRight" Content="Right" Width="80" Height="30" DockPanel.Dock="Right" Click="btnRight_Click"/>
+
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnCenter" Content="Center" Width="80" Height="30" Click="btnCenter_Click"/>
+                <Image x:Name="TrophyImage" Source="C:\Users\SofiaYe\Source\Repos\hemuppgift-wpf-mmd19\Hemuppgift_WPFtemplate\TrophyImage.jpg" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="250"/>
+            </StackPanel>
+            
+        </Grid>
+
+
+        </DockPanel>
+ 
+
+
+
+
+
+</Window>
